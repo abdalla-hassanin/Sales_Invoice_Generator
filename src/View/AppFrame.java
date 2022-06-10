@@ -201,7 +201,7 @@ public class AppFrame extends JFrame {
 		saveButton.addActionListener(listener);
 
 
-		JButton cancelButton = new JButton("Cancel");
+		JButton cancelButton = new JButton("Delete");
 		cancelButton.setActionCommand("CancelLine");
 		cancelButton.addActionListener(listener);
 		cancelButton.setPreferredSize(new Dimension(100, 30));
