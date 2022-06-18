@@ -155,6 +155,8 @@ public class AppListener implements ActionListener, ListSelectionListener {
 
     private void lineDialogSave() {
 
+
+        //////////////////
         appFrame.getLineDialog().setVisible(false);
         appFrame.getLineDialog().dispose();
         appFrame.setLineDialog(null);
@@ -169,7 +171,7 @@ public class AppListener implements ActionListener, ListSelectionListener {
                 header);
         header.addInvoiceLine(invoiceLine);
         appFrame.getInvoiceLineTableModel().fireTableDataChanged();
-        appFrame.getInvoiceHeaderTableModel().fireTableRowsUpdated(0, headerIndex);
+        appFrame.getInvoiceHeaderTableModel().fireTableDataChanged();
         appFrame.getInvoiceTotalTextField().setText("" + header.getInvoiceTotal());
         displayInvoices();
     }

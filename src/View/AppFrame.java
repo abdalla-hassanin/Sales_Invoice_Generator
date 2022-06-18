@@ -195,7 +195,7 @@ public class AppFrame extends JFrame {
 
 		JPanel bodySidePanel = new JPanel();
 
-		JButton saveButton = new JButton("Save");
+		JButton saveButton = new JButton("Add");
 		saveButton.setPreferredSize(new Dimension(100, 30));
 		saveButton.setActionCommand("SaveLine");
 		saveButton.addActionListener(listener);
